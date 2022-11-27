@@ -7,13 +7,15 @@ import Tour from "./pages/Tour";
 
 function App() {
   return (
-    <Router>
-      <SearchAppBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/:id/:slug" element={<Tour />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <Router>
+        <SearchAppBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/:id/:slug" element={<Tour />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
